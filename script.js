@@ -7,6 +7,7 @@ const closeBtn = document.querySelector(".close");
 const thumbnails = document.getElementsByClassName("thumbnail");
 const modalThumbnails = document.getElementsByClassName("modal-thumbnail");
 
+
 //-----------changes the active thumbnail
 for (let i = 0; i < thumbnails.length; i++) {
         thumbnails[i].addEventListener("click", switchSource);
@@ -128,5 +129,5 @@ if (quantity === 0) return;
 });
 
 cartIcon.addEventListener('click', () => {
-  cartPopup.classList.toggle('hidden');
+  cartPopup.classList.toggle('show');
 });

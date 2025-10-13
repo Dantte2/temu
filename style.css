@@ -239,3 +239,18 @@ p {
         border: 2px solid orange;
 
 }
+.cart-popup {
+    position: absolute;
+    top: 60px; 
+    right: 70px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: none; 
+    z-index: 1000;
+}
+
+.cart-popup.show {
+    display: block;
+}
