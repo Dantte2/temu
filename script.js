@@ -78,6 +78,7 @@ for (let i = 0; i < modalThumbnails.length; i++) {
         }
     });
 }
+<<<<<<< HEAD
 
 const decreaseBtn = document.getElementById('decrease');
 const increaseBtn = document.getElementById('increase');
@@ -130,3 +131,5 @@ if (quantity === 0) return;
 cartIcon.addEventListener('click', () => {
   cartPopup.classList.toggle('hidden');
 });
+=======
+>>>>>>> d39257b4358c91d1a499140e56ea57bc49cc547e
