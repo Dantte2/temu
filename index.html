@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  
+  
+  <header id="navbar">
+    <nav class="nav-container">
+      <div class="nav-left">
+        <span class="logo"><strong>sneakers</strong></span>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="#">Collections</a></li>
+          <li><a class="nav-link" href="#">Men</a></li>
+          <li><a class="nav-link" href="#">Women</a></li>
+          <li><a class="nav-link" href="#">About</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button class="cart-icon" aria-label="Shopping cart">
+          <img src="images/icon-cart.svg" alt="Cart Icon">
+        </button>
+        <img class="profile-img" src="images/image-avatar.png" alt="User Profile" width="30">
+      </div>
+    </nav>
+  </header>
+
+  
+  <main id="main-content">
+    <section class="product-section">
+
+      <div class="image-gallery">
+        <img id="main-image" src="images/image-product-1.jpg" alt="Main Shoe Image" width="300">
+        <div class="thumbnail-container">
+          <img class="thumbnail active" id="thumbOne" src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" width="50">
+          <img class="thumbnail" id="thumbTwo" src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" width="50">
+          <img class="thumbnail" id="thumbThree" src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" width="50">
+          <img class="thumbnail" id="thumbFour" src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" width="50">
+        </div>
+      </div>
+
+      <div class="product-info">
+        <p class="company-name">SNEAKER COMPANY</p>
+        <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+        <p class="product-description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+
+        <div class="price-section">
+          <div class="current-price">
+            <h2>$125.00</h2>
+            <span class="discount-tag">50%</span>
+          </div>
+          <p class="original-price"><s>$250.00</s></p>
+        </div>
+
+        <div class="quantity-add-container">
+          <div class="quantity-selector">
+            <button class="qty-btn" id="decrease" aria-label="Decrease quantity">-</button>
+            <input type="number" id="quantity" value="0" readonly>
+            <button class="qty-btn" id="increase" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button class="add-to-cart-btn">
+            <img src="images/icon-cart.svg" alt="" aria-hidden="true">
+            Add to cart
+          </button>
+        </div>
+      </div>
+
+      <div id="modal">
+    <span class="close">&times;</span>
+            <img class="modal-content" alt="" src="">
+        <div class="thumbnail-modal">
+          <img class="modal-thumbnail active" id="thumbOne" src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" width="50">
+          <img class="modal-thumbnail" id="thumbTwo" src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" width="50">
+          <img class="modal-thumbnail" id="thumbThree" src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" width="50">
+          <img class="modal-thumbnail" id="thumbFour" src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" width="50">
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
